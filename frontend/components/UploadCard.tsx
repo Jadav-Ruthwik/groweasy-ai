@@ -78,15 +78,11 @@ export default function UploadCard() {
 
       formData.append("file", file);
 
-      const response = await axios.post(
-        "http://localhost:5000/api/import",
-        formData,
-        {
-          headers: {
-            "Content-Type": "multipart/form-data",
-          },
-        },
-      );
+      const response = await api.post("/import", formData, {
+  headers: {
+    "Content-Type": "multipart/form-data",
+  },
+});
 
       setProgress(100);
 
