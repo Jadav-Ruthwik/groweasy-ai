@@ -1,4 +1,4 @@
-import Papa, { ParseResult } from "papaparse";
+import Papa from "papaparse";
 
 export function parseCsv(file: File): Promise<any[]> {
   return new Promise((resolve, reject) => {
@@ -6,7 +6,7 @@ export function parseCsv(file: File): Promise<any[]> {
       header: true,
       skipEmptyLines: true,
 
-      complete: (results: ParseResult<any>) => {
+      complete: (results: any) => {
         resolve(results.data);
       },
 
