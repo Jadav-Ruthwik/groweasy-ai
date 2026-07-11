@@ -48,6 +48,12 @@ Rules:
 7. Fill missing fields with "".
 8. Skip only completely unusable rows.
 9. Return ONLY valid JSON.
+10. IMPORTANT:
+If BOTH email and mobile are missing, DO NOT include that record in the output.
+
+Return ONLY valid CRM records.
+Do not invent email or phone numbers.
+If a value is missing, leave it empty.
 
 CSV Records:
 ${JSON.stringify(records)}
