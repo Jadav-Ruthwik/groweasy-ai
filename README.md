@@ -167,7 +167,7 @@ _Add screenshot here_
 
 **Jadav Ruthwik**
 
-📧 Email: jadavruthwik@gmail.com
+📧 Email: 23211a05b9@bvrit.ac.in
 
 GitHub:
 https://github.com/Jadav-Ruthwik
