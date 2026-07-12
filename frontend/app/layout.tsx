@@ -13,10 +13,14 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+import type { Metadata } from "next";
+
 export const metadata: Metadata = {
-  title: "🚀GrowEasy AI Importer | AI CRM CSV Import Tool",
-  description:
-    "Upload CRM CSV files and automatically map them into GrowEasy CRM format using Google Gemini AI.",
+  title: "GrowEasy AI Importer",
+  description: "AI-powered CRM CSV Importer",
+  icons: {
+    icon: "/icon.png",
+  },
 };
 
 export default function RootLayout({
